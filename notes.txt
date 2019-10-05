@@ -1,0 +1,39 @@
+TraCalorie
+use module pattern
+local storage to persist data
+
+we will use different module controllers
+-local storage (last)
+-item controllers
+-ui, state- edit state, delete, clear
+-main app
+
+materialize css for ui
+
+2 6 column grid, 
+1 has meal item, 1 has calorie count
+---
+x
+
+when we add an item, we need a constructor so then we can add it to the state
+
+when i'm bringing in return values from other ctrlers I need to save it in a variables
+
+---
+how to disable enter
+document.addEventListener('keypress', function(e){
+    //check to see if enter was hit
+      if(e.keyCode === 13 || e.which === 13) {
+        e.preventDefault();
+        return false;
+      }
+
+problem- fixed
+-pressing back to clear edit state reloads the page, line 240is
+-may need to set a new function to prevent default
+
+Notes* Item, UI name and define the functions, App make them happen/execute
+So we have a set of functions (stuff we need to happen on the page), we organize them by what they do/ctrl, everything comes together in the app
+---
+left off @ video 109, 1.75 hrs to go
+up next adv web dev bc
